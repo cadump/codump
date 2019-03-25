@@ -1,3 +1,5 @@
+#ifndef CODUMP_AST_
+#define CODUMP_AST_
 enum {
       ASSIGN
 } typedef OPERATOR;
@@ -38,4 +40,4 @@ struct {
   int expression_count;
   TYPE return_type;
 } typedef FUNCTION;
-
+#endif
