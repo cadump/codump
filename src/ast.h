@@ -1,18 +1,26 @@
 #ifndef CODUMP_AST_
 #define CODUMP_AST_
 enum {
-      ASSIGN
+      ASSIGN,
+      APPEND,
+      ADD,
+      SUBSTRACT,
+      MULTIPLY,
+      DIVIDE,
+      POWER
 } typedef OPERATOR;
 
 enum {
       INT,
       FLOAT,
       STRING,
-      CHAR
+      CHAR,
+      COMPLEX
 } typedef TYPE;
 
 struct {
   TYPE type;
+  ARRAY complex_children;
   char name[50];
 } typedef OBJECT;
 
